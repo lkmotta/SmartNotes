@@ -1,0 +1,22 @@
+# arquivos e pastas do sistema
+.DS_Store
+Thumbs.db
+
+# arquivos temporários do editor e backup
+*.swp
+*~
+*.bak
+
+# diretórios de configurações de IDE/editor
+.vscode/
+.idea/
+
+# logs e arquivos temporários de execução
+*.log
+npm-debug.log*
+
+# diretórios de dependências e build (retirados devido o tamanho dos pacotes)
+node_modules/
+dist/
+build/
+venv/
