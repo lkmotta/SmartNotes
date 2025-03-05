@@ -4,6 +4,7 @@
 <br>
 
 ### Feito com:
+<<<<<<< HEAD
 
 <div align="left">
   <a href="https://www.electronjs.org" target="_blank">
@@ -18,6 +19,15 @@
   <a href="https://webpack.js.org" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" width="60" height="60" title="Webpack"/>
   </a>
+=======
+<div align="left">
+  <a href="#" style="cursor: default;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" width="60" height="60" title="Electron.js"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg" width="60" height="60" title="React Router"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/babel/babel-original.svg" width="60" height="60" title="Babel"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" width="60" height="60" title="Webpack"/>
+  </a>  
+>>>>>>> 5a03587f1b16ec4a5a60fbff7bc54b7aa4d1f187
 </div>
 
 ### Comandos
