@@ -1,0 +1,134 @@
+ul {
+  padding-inline-start: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4em;
+  background: #11101D;
+  padding: 6px 14px;
+  transition: all 0.5s ease;
+  z-index: 99;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar.open {
+  width: 16em;
+  align-items: flex-start;
+}
+
+.logo-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  position: relative;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.logo-text {
+  background: linear-gradient(90deg, navy, royalblue);
+  background-clip: text;
+  color: transparent;
+  font-size: 1.5em;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.4s ease;
+  margin-left: 1em;
+}
+
+.sidebar.open .logo-text {
+  opacity: 1;
+}
+
+#btn-menu {
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sidebar.open #btn-menu {
+  right: 0;
+}
+
+.nav-list {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.nav-list li {
+  position: relative;
+  list-style: none;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.nav-list li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #11101D;
+  padding: 0.5em 1em;
+}
+
+.nav-list li a:hover {
+  background: #2e2e2e;
+}
+
+.links_name {
+  color: #fff;
+  font-size: 1.2em;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+  margin-left: 0.5em;
+}
+
+.sidebar.open .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  transform: translateY(-50%);
+}
+
+.nav-list li:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar.open .tooltip {
+  display: none;
+}

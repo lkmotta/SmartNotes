@@ -5,11 +5,20 @@
 
 ### Feito com:
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" width="50" height="50" title="Electron.js"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg" width="50" height="50" title="React Router"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/babel/babel-original.svg" width="50" height="50" title="Babel"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" width="50" height="50" title="Webpack"/>
-
+<div align="left">
+  <a href="https://www.electronjs.org" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" width="60" height="60" title="Electron.js"/>
+  </a>  
+  <a href="https://reactrouter.com" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg" width="60" height="60" title="React Router"/>
+  </a>
+  <a href="https://babeljs.io" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/babel/babel-original.svg" width="60" height="60" title="Babel"/>
+  </a>
+  <a href="https://webpack.js.org" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" width="60" height="60" title="Webpack"/>
+  </a>
+</div>
 
 ### Comandos
 
