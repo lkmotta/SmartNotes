@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
 import Notas from './pages/Notas';
 import Desempenho from './pages/Desempenho';
 
 export default function App() {
+  const [sidebarWidth, setSidebarWidth] = useState(64); // largura inicial da sidebar
+
   return (
     <Router basename="/">
       <div style={{ display: 'flex' }}>
-        <Navbar />
-        <div style={{ flex: 1, padding: '20px' }}>
+        <Sidebar setSidebarWidth={setSidebarWidth} />
+        <div style={{ flex: 1, marginLeft: `${sidebarWidth+20}px` }}> {/* 20px de margem para o conteúdo */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/notas" element={<Notas />} />

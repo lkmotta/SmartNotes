@@ -1,11 +1,16 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, screen } = require('electron');
 const path = require('path');
 
 function createWindow() {
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+  const widthMinima = (width / 2); // metade da tela
+  const heightMinima = height;
+  
   const win = new BrowserWindow({
-    minWidth: 1280,
-    minHeight: 720,
+    minWidth: widthMinima,
+    minHeight: heightMinima,
     //fullscreen: true,
+    autoHideMenuBar: true, // 'alt' para mostrar a barra de menu
     title: 'SmartNotes',
     icon: path.join(__dirname, 'img/notepad_icon_24px.png'), // icon temporário
     webPreferences: {
