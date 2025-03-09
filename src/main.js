@@ -12,7 +12,7 @@ function createWindow() {
     //fullscreen: true,
     autoHideMenuBar: true, // 'alt' para mostrar a barra de menu
     title: 'SmartNotes',
-    icon: path.join(__dirname, 'img/notepad_icon_24px.png'), // icon temporário
+    icon: path.join(__dirname, 'img/logo.ico'), // ícone da aplicação
     webPreferences: {
       nodeIntegration: true,
     },
