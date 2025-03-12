@@ -5,6 +5,5 @@ export default function Home() {
         <div>
             <h1>Seja Bem-Vindo ao SmartNotes!</h1>
         </div>
-        
     );
 }

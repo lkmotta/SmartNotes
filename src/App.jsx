@@ -17,7 +17,7 @@ export default function App() {
     <Router basename="/">
       <div style={{ display: 'flex', marginLeft: `${sidebarWidth}px` }}>
         <Sidebar />
-        <div style={{ flex: 1 }}> {/* 20px de margem para o conteúdo */}
+        <div style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/pomodoroTimer" element={<PomodoroTimer />} />
