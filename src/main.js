@@ -9,7 +9,9 @@ function createWindow() {
   const win = new BrowserWindow({
     minWidth: widthMinima,
     minHeight: heightMinima,
-    //fullscreen: true,
+    resizable: true,
+    fullscreenable: true,
+    maximizable: true,
     autoHideMenuBar: true, // 'alt' para mostrar a barra de menu
     title: 'SmartNotes',
     icon: path.join(__dirname, 'img/logo.ico'), // ícone da aplicação
@@ -18,7 +20,11 @@ function createWindow() {
     },
   });
 
-  win.maximize(); // maximizando a janela por padrão
+  win.once('ready-to-show', () => {
+    win.maximize(); // maximizando a janela por padrão
+    win.show();
+  });
+
   win.loadURL(`file://${path.join(__dirname, 'index.html')}`);
 }
 
