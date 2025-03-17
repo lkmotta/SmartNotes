@@ -132,7 +132,6 @@ export default function Tasks() {
                                 key={index}
                                 title={`${index + 1}`}
                                 className="bx bx-time"
-                                // se o indice for menor que taskPomodoros, pinta de #d1d1d1, senão #8d8d8d
                                 style={{ color: index < taskPomodoros ? '#d1d1d1' : '#8d8d8d' }}
                                 onClick={() => handleClockClick(index + 1)}
                                 ></i>

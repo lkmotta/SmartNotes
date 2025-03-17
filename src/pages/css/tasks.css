@@ -79,6 +79,10 @@ header h1 {
     color: #fff;
 }
 
+.bxs-up-arrow{
+    padding: 10px;
+}
+
 .pomodoros-container {
     display: flex;
     align-items: center;
@@ -144,10 +148,11 @@ header h1 {
 
 .empty-tasks img{
     display: block;
+    width: 20%;
+    height: 20%;
+    min-width: 200px; 
     text-align: center;
     margin: 0 auto;
-    width: 22%;
-    height: 22%;
     -webkit-user-drag: none;
     /* padding: 40px 0; */
     /* fill: #8E8E8E; */
